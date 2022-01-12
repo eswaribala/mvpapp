@@ -1,0 +1,9 @@
+
+<section class="section">
+  <app-title [customerName]="orgName"  class="title" ></app-title>
+<mat-form-field class="input">
+<input matInput [(ngModel)]="city" placeholder="Enter City Name" />
+</mat-form-field>
+
+<app-child (capitalize)="convert()" class="convert"></app-child>
+</section>

@@ -1,0 +1,27 @@
+.section
+{
+  width:90%;
+  display: block;
+  padding: 7%;
+
+}
+
+.title
+{
+  width:100%;
+  display:block;
+}
+
+.input
+{
+  width:40%;
+  float: left;
+  padding: 2%;
+}
+.convert
+{
+  margin-left: 2%;
+  width:20%;
+
+}
+

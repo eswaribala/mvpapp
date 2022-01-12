@@ -1,0 +1,18 @@
+.ui-menubar {
+  float:left;
+  margin-left: 5%;
+
+}
+
+
+.ui-menu-list
+{
+  background-color: red;
+
+}
+
+.ui-menuitem
+{
+  background-color: green;
+
+}

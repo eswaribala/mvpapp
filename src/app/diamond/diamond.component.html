@@ -1,0 +1,27 @@
+<div *ngIf="_data?.length>0" class="data">
+  <!--
+  <ul *ngFor="let obj of _data">
+    <li>{{obj.title}}</li>
+    <li><img src="{{obj.thumbnailUrl}}"/></li>
+  </ul>
+  -->
+  <div *ngFor="let obj of _data">
+  <mat-card class="example-card">
+    <mat-card-header class="header">
+      <div mat-card-avatar class="example-header-image">
+
+      </div>
+      <mat-card-title class="title">{{obj.title}}</mat-card-title>
+
+    </mat-card-header>
+    <img mat-card-image src="{{obj.thumbnailUrl}}" alt="" class="logo">
+    <mat-card-content>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  </div>
+</div>

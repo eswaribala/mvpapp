@@ -1,0 +1,33 @@
+header
+{
+  width:80%;
+
+
+}
+
+.figure
+{
+  width:25%;
+  float:left;
+}
+.title
+{
+  margin-left:45%;
+  width:60%;
+  padding:5%;
+  font-size: x-large;
+  color: blueviolet;
+}
+.resultarea
+{
+  width:90%;
+
+
+}
+.user
+{
+  width:30%;
+  padding: 5%;
+  float:left;
+}
+

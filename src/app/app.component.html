@@ -1,0 +1,31 @@
+
+<!--interpolation -->
+<header>
+  <figure class="figure">
+  <img src="{{logoPath}}" alt=""/>
+  </figure>
+  <article class="title">
+    <h1>{{title}}</h1>
+  </article>
+</header>
+<div class="resultarea">
+<!--<login-app class="login"></login-app>-->
+<div *ngIf="users?.length>0" class="user">
+  <mat-form-field>
+    <input matInput placeholder="search" [(ngModel)]="searchString"/>
+    <mat-icon>search</mat-icon>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Frequent Buyers</mat-label>
+    <mat-select (selectionChange)="checkUser()" [(ngModel)]="user">
+      <mat-option *ngFor="let user of users|UserFilter:searchString"
+                  [value]="user.name">
+        {{user.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  </div>
+
+  <router-outlet ></router-outlet>
+</div>
+
